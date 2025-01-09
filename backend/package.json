@@ -18,5 +18,8 @@
     "express": "^4.21.2",
     "pg": "^8.13.1",
     "typescript": "^5.7.3"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.10"
   }
 }
