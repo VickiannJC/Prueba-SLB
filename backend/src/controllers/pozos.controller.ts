@@ -4,9 +4,9 @@ import { pool } from '../db/db.config';
 // Obtener lita de pozos de la base de datos
 export const getPozos = async (req: Request, res: Response) => {
     try {
-        console.log('Ejecutando consulta: SELECT * FROM pozos');
+        //console.log('Ejecutando consulta: SELECT * FROM pozos');
         const result = await pool.query('SELECT * FROM pozos');
-        console.log('Resultado de la consulta:', result.rows);
+        //console.log('Resultado de la consulta:', result.rows); Verificar datos consultados
         res.json(result.rows);
     } catch (error) {
         console.error('Error al obtener los pozos:', error);

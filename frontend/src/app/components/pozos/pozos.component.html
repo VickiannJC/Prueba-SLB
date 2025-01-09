@@ -1,0 +1,30 @@
+<div class="container">
+    <h2>Lista de Pozos</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Ubicación</th>
+          <th>Producción</th>
+          <th>Estado</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let pozo of pozos" [class.activo]="pozo.estado === 'activo'" [class.inactivo]="pozo.estado === 'inactivo'">
+          <td>{{ pozo.id }}</td>
+          <td>{{ pozo.nombre }}</td>
+          <td>{{ pozo.ubicacion }}</td>
+          <td>{{ pozo.produccionConvertida }}</td>
+          <td>
+            <label class="switch">
+              <input type="checkbox" [checked]="pozo.estado === 'activo'" (change)="cambiarEstado(pozo)" />
+              <span class="slider round"></span>
+            </label>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

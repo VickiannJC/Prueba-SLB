@@ -1,0 +1,14 @@
+<div class="container">
+    <h2>Agregar Nuevo Pozo</h2>
+    <form (ngSubmit)="agregarPozo()">
+      <input [(ngModel)]="nuevoPozo.nombre" name="nombre" placeholder="Nombre" required />
+      <input [(ngModel)]="nuevoPozo.ubicacion" name="ubicacion" placeholder="Ubicación" required />
+      <input [(ngModel)]="nuevoPozo.produccionDiaria" name="produccionDiaria" placeholder="Producción Diaria" type="number" required />
+      <select [(ngModel)]="nuevoPozo.estado" name="estado">
+        <option value="activo">Activo</option>
+        <option value="inactivo">Inactivo</option>
+      </select>
+      <button type="submit">Agregar Pozo</button>
+    </form>
+  </div>
+  
