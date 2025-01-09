@@ -1,7 +1,10 @@
 # Proyecto-SLB
+
 ## Descripción del Proyecto
+
 ### Objetivo
 Desarrollar una aplicación web para gestionar pozos petroleros.
+
 ## Funcionalidades
 -Listar los pozos petroleros disponibles en una tabla con datos actualizados desde una API.
 -Crear nuevos registros de pozos.
@@ -23,12 +26,18 @@ Desarrollar una aplicación web para gestionar pozos petroleros.
         -Cambiar el estado de un pozo (Activo/Inactivo)
      4.Pipe
         Conversión de unidades de producción diarias: barriles, galones y litros.
-3. Backend =>  Node.js con TypeScript.
+
+        
+2. Backend =>  Node.js con TypeScript.
    Maneja operaciones CRUD mediate endpoints REST
-   -GET ->getPozos: Devuelve la lista de todos los pozos registradis
-   -post -> createPozos: Crea un nuevo pozo, añadiendole a la tabla
-   -patch -> updateEstadoPozo: Actualizar el estado de un pozo (activo /inactivo)
-5. Base de datos => PostgreSQL.
+    
+   - GET ->getPozos: Devuelve la lista de todos los pozos registradis
+   - POST -> createPozos: Crea un nuevo pozo, añadiendole a la tabla
+   - PATCH -> updateEstadoPozo: Actualizar el estado de un pozo (activo /inactivo)
+
+     
+4. Base de datos => PostgreSQL.
+   
        TABLE pozos (
         id SERIAL PRIMARY KEY,             -- ID único para cada pozo (auto-incremental)
         nombre VARCHAR(100) NOT NULL,      -- Nombre del pozo
@@ -43,7 +52,9 @@ Desarrollar una aplicación web para gestionar pozos petroleros.
   Posibles causas:
   1. Rutas no configuradas correctamente en el servidor.
   2. Falta de redirección al archivo index.html para servir el frontend desde el backend.
+ 
   ##FALTANTES
+ 
   ##Dockerización
      1. Crear un Dockerfile para el backend que instala dependencias y ejecuta el servidor.
      2. Crear otro Dockerfile para el frontend compila la aplicación Angular y la sirve con Nginx.
@@ -52,18 +63,24 @@ Desarrollar una aplicación web para gestionar pozos petroleros.
   1. Clonar el repositorio
       git clone 
       cd Prueba-SLB
+     
   ##Backend
-  2. Instalación de dependencias
+  
+  3. Instalación de dependencias
       npm install express pg body-parser cors typescript @types/node @types/express –sabe
       npm install --save-dev @types/cors
       //instalación de pg librería utilizada para conectarse a PostgreSQL.
       npm install --save-dev @types/pg
-  3. Compilación servidor
+  4. Compilación servidor
        ts
-  4. Correr el servidor
+  5. Correr el servidor
        node dist/index.js
 Servidor http://localhost:3000
+
+
 ##Frontend
+
+
   6. Instalación de dependencias
       npm install @angular/forms @angular/common @angular/router
       npm install -g http-server
