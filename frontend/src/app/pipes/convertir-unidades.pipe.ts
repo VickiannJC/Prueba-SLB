@@ -4,8 +4,10 @@ import { Pipe, PipeTransform, Injectable } from '@angular/core';
   name: 'convertirUnidades',
 })
 @Injectable({
-  providedIn: 'root', // Esto permite usar el pipe como un servicio inyectable
+  providedIn: 'root', 
 })
+
+//Convertir la producción diaria en litros, galones y barriles
 export class ConvertirUnidadesPipe implements PipeTransform {
   transform(valor: number, unidad: string): string {
     if (!valor) {

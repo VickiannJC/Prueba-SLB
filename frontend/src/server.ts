@@ -2,7 +2,8 @@ import express, { Request, Response } from 'express';
 import path from 'path';
 
 const app = express();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env['PORT'] || 8080;
+
 
 // Ruta estática para servir los archivos de Angular
 app.use(express.static(path.join(__dirname, '../dist/frontend')));
