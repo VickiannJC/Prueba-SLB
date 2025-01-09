@@ -2,7 +2,7 @@
 ## Descripción del Proyecto
 ### Objetivo
 Desarrollar una aplicación web para gestionar pozos petroleros.
-### Funcionalidades
+## Funcionalidades
 -Listar los pozos petroleros disponibles en una tabla con datos actualizados desde una API.
 -Crear nuevos registros de pozos.
 -Actualizar el estado operativo de un pozo (de "activo" a "inactivo" y viceversa).
@@ -44,7 +44,7 @@ Desarrollar una aplicación web para gestionar pozos petroleros.
   1. Rutas no configuradas correctamente en el servidor.
   2. Falta de redirección al archivo index.html para servir el frontend desde el backend.
   ##FALTANTES
-  ###Dockerización
+  ##Dockerización
      1. Crear un Dockerfile para el backend que instala dependencias y ejecuta el servidor.
      2. Crear otro Dockerfile para el frontend compila la aplicación Angular y la sirve con Nginx.
     3.  Archivo docker-compose.yml -> coordina ambos servicios junto con la base de datos
@@ -52,7 +52,7 @@ Desarrollar una aplicación web para gestionar pozos petroleros.
   1. Clonar el repositorio
       git clone 
       cd Prueba-SLB
-  ###Backend
+  ##Backend
   2. Instalación de dependencias
       npm install express pg body-parser cors typescript @types/node @types/express –sabe
       npm install --save-dev @types/cors
@@ -63,7 +63,7 @@ Desarrollar una aplicación web para gestionar pozos petroleros.
   4. Correr el servidor
        node dist/index.js
 Servidor http://localhost:3000
-  ###Frontend
+##Frontend
   6. Instalación de dependencias
       npm install @angular/forms @angular/common @angular/router
       npm install -g http-server
