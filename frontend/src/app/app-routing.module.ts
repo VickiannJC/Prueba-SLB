@@ -5,8 +5,7 @@ import { FormularioComponent } from './components/formulario/formulario.componen
 
 const routes: Routes = [
   { path: 'pozos', component: PozosComponent },
-  { path: 'formulario', component: FormularioComponent },
-  { path: 'pozos', component: PozosComponent }
+  { path: 'formulario', component: FormularioComponent }
 ];
 
 @NgModule({
