@@ -18,6 +18,7 @@ export class PozosComponent implements OnInit {
     this.cargarPozos();
   }
 
+  //Cargar la lista de todos los pozos
   cargarPozos(): void {
     this.pozosService.getPozos().subscribe((data) => {
       this.pozos = data.map((pozo) => ({
@@ -26,7 +27,8 @@ export class PozosComponent implements OnInit {
       }));
     });
   }
-
+  
+  //Carbiar estado de un pozo: 'Activo'<=> 'Inactivo
   cambiarEstado(pozo: any): void {
     const nuevoEstado = pozo.estado === 'activo' ? 'inactivo' : 'activo';
     this.pozosService.updateEstado(pozo.id, nuevoEstado).subscribe(() => {

@@ -1,5 +1,6 @@
 <div class="container">
     <h2>Lista de Pozos</h2>
+    <!-- Mostrar toda la lista de pozos en el sistema con todos sus atributos en una tabla -->
     <table>
       <thead>
         <tr>
@@ -12,6 +13,7 @@
         </tr>
       </thead>
       <tbody>
+        <!--*ngFor Iterar sobre los pozos-->
         <tr *ngFor="let pozo of pozos" [class.activo]="pozo.estado === 'activo'" [class.inactivo]="pozo.estado === 'inactivo'">
           <td>{{ pozo.id }}</td>
           <td>{{ pozo.nombre }}</td>

@@ -1,5 +1,6 @@
 <div class="container">
     <h2>Agregar Nuevo Pozo</h2>
+    <!-- Se agrega un nuevo pozo a la base de datos con todos sus atributos y el estado-->
     <form (ngSubmit)="agregarPozo()">
       <input [(ngModel)]="nuevoPozo.nombre" name="nombre" placeholder="Nombre" required />
       <input [(ngModel)]="nuevoPozo.ubicacion" name="ubicacion" placeholder="Ubicación" required />
@@ -8,6 +9,7 @@
         <option value="activo">Activo</option>
         <option value="inactivo">Inactivo</option>
       </select>
+      <!-- Botón para agregar-->
       <button type="submit">Agregar Pozo</button>
     </form>
   </div>

@@ -13,6 +13,7 @@ export class FormularioComponent {
 
   constructor(private pozosService: PozosService) {}
 
+  //Agregar nuevos pozos
   agregarPozo() {
     this.pozosService.addPozo(this.nuevoPozo).subscribe(() => {
       alert('Pozo agregado con éxito');
