@@ -38,7 +38,7 @@ Desarrollar una aplicación web para gestionar pozos petroleros.
     );
 
 
-  ##ERRORES 
+  #ERRORES 
   Error Crítico en el servidor frontend -> HTTP 404
   Posibles causas:
   1. Rutas no configuradas correctamente en el servidor.
